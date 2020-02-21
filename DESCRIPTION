@@ -1,0 +1,17 @@
+Package: QSPworkflow
+Type: Package
+Title: Creates the workflow used in the Quantitative Sciences Program
+Version: 0.1.0
+Author: Doug Tommet
+Maintainer: Doug Tommet <doug_tommet@brown.edu>
+Description: This package contains the tools to implement the workflow of 
+    the Quantatitive Sciences Program.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    fs,
+    stringr
+RoxygenNote: 7.0.2
+Suggests: 
+    testthat (>= 2.1.0)
