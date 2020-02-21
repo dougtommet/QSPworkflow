@@ -1,0 +1,41 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# QSPworkflow
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of QSPworkflow is to put the workflow tools used by QSP into one place.
+
+Currently, the only function is **network_path()**.  Planned work includes functions that set up the directory structure and file structure.
+
+## Installation
+
+You can install the  development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("dougtommet/QSPworkflow")
+```
+## Example
+
+
+```{r example}
+library(QSPworkflow)
+my_project <- fs::path(network_path(), "Projects", "My_Project")
+my_project
+# df <- readr::read_csv(fs::path(my_project, "my_data.csv"))
+```
